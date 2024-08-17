@@ -1,0 +1,426 @@
+body{
+    background-color: #FFF4E0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+} 
+
+
+.intro {
+    flex-wrap: wrap;
+    margin-top: 7%;
+}
+.intro .intro-text {
+    height: fit-content;
+    color: #27394D;
+    flex: 60%;
+    text-align: center;
+}
+.intro .intro-text h1{
+    font-weight: bolder;
+}
+.intro img{
+    height: auto;
+    width: 50%;
+    margin: auto;
+}
+.intro .btn{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid #27394D;
+    background-color:  #FFC154;
+    color: #27394D;
+    width: 60%;
+    margin: auto;
+    margin-top: .5rem;
+}
+.intro .desktop{
+    display: none;
+}
+.scroll{
+    background-color: #92A7B9;
+    color: white;
+    border-radius: 23px;
+    width: 30%;
+    margin: 1.5rem auto;
+    display: flex;
+}
+.steps img{
+    height: 30%;
+    width: 15%;
+    margin-right: 1rem;
+}
+.steps{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.steps h2{
+    text-align: center;
+}
+.description{
+    background-color: #27394D;
+    color: white;
+    padding: 5% 7%;
+}
+
+.description a{
+    color: white;
+}
+.support img{
+    width: 100%;
+}
+.support h2{
+    text-align: center;
+}
+.support p{
+    /* padding: 7% 7%; */
+    text-align: center;
+    margin-top: 5%;
+}
+.support .btn{
+    width: 50%;
+    margin: auto;
+    background-color: #C56A4B;
+    box-shadow: 1px 3px 2px rgba(0,0,0,0.5);
+    font-size: calc(1.275rem + .3vw);
+}
+.breakpoint{
+    height: 100px;
+    background: url("/static/images/breakpoint.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+}
+.explain{
+    background-color: #FFE0B0;
+}
+.explain .explain-special{
+    background-color: #E0E2DF;
+}
+.explain2 .explain2-special{
+    background-color: #FFE0B0;
+}
+.explain img {
+    width: 40%;
+    height: auto;
+}
+.explain2{
+    background-color: #E0E2DF;
+}
+.explain2 img {
+    width: 40%;
+}
+
+/* FAQs page design */
+.question h4{
+    width: 90%;
+}
+.question {
+    cursor: pointer;
+}
+.faq-wording{
+    width: 80%;
+    flex-wrap: wrap;
+}
+.faq-wording .btn{
+    width: 50%;
+    background-color: #C56A4B;
+    margin: auto;
+    font-size: (1.3rem + .6vw);
+}
+.faq-wording h4{
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+/* Find help page  */
+.shortcuts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+.shortcuts .service{
+    background-color: #FDF8F2;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    /* height: 30vh; */
+    box-sizing: border-box;
+    /* position: relative; */
+}
+.shortcuts .service a{
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.shortcuts img{
+    border-radius:10px;
+    height: auto;
+    width: 45%;
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    margin: auto;
+}
+
+/* Service page  */
+.service {
+    background-color: #FDF8F2;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+}
+.service .link{
+    /* width: 60%; */
+    color: #255993;
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+.service-header img{
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* footer styles  */
+footer{
+    margin-top: auto;
+    /* bottom: 0;
+    position: sticky;
+    left: 0;
+    right: 0; */
+}
+footer a{
+    color: #3B4041;
+}
+footer .container{
+    width: 80%;
+    margin-top: 2rem;
+}
+.footer .container{
+    align-items: center;
+}
+
+/* More info page  */
+.info-header{
+    /* margin-top: 10%; */
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+}
+.info-header img{
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+}
+.info-header a{
+    font-size: 1.5em;
+    color: #255993;
+    display: block;
+    font-weight: bolder;
+}
+.info-body{
+    margin: auto;
+    padding: 1rem;
+}   
+.info-body .card{
+    background-color: #FFC154;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+    /* margin: 1rem;
+    padding: 1rem; */
+}
+/* Search styling  */
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+.input-search{
+    height: 50px;
+    /* width: 50px; */
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all .5s ease-in-out;
+    background-color: #FED68C;
+    padding-right: 40px;
+    color:#fff;
+  }
+.input-search::placeholder{
+    color:#ffffff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+.btn-search{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /* border-radius: 50%; */
+    position: absolute;
+    right: 0px;
+    color:#ffffff ;
+    background-color:#173A60;
+    pointer-events: painted;  
+  }
+
+.suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+    list-style: none;
+  }
+  
+.suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
+  }
+
+/* Service query  */
+
+@media only screen and (max-width: 768px) {
+    .desktop{
+        display: none;
+    } 
+    .scroll{
+        display: none;
+    } 
+}
+
+@media only screen and (min-width: 768px) {
+    /* Your styles here */ 
+    .question h4{
+        margin-bottom: 1.5rem;
+        /* width: 100%; */
+    }
+  }
+
+@media only screen and (min-width: 1024px){
+    .intro{
+        margin-top: 2%;
+    }
+    .intro .intro-text{
+        flex: 50%;
+        margin-top: 7%;
+        text-align: left;
+    }   
+    .intro .btn{
+        width: 50%;
+        margin: 0%;
+        /* margin-top: none; */
+    }
+    .intro .mobile{
+        display: none;
+    }
+    .intro .desktop{
+        display: block;
+    }
+    .tip h2{
+        font-size: 2rem;
+        text-align: left;
+    }
+    .tip p{
+        width: 85%;
+        font-size: 1.2rem;
+    }
+    .description{
+        padding: 7% 17%;
+    }
+    .description p{
+        margin: auto;
+        font-size: calc(1.275rem + .3vw);
+    }
+    .support .row{
+        /* width: 80%; */
+        margin: auto;
+    }
+    .support img{
+        width: 120%;
+        display: block;
+        margin: auto;
+    }   
+    .support p{
+        width: 70%;
+        text-align: left;
+        margin: auto;
+        font-size: calc(1.275rem + .3vw);
+        /* margin-left: 10%; */
+        /* font-size: 2rem; */
+    }
+    /* .support h2{
+        text-align: left;
+        width: 90%;
+        margin: auto;
+    } */
+    .support .btn{
+        /* margin-left: 10%; */
+        margin: auto;
+        width: 60%;
+        font-size: 2.5rem;
+    }
+    .breakpoint{
+        height: 150px;
+    }
+    .explain .explain-special{
+        background-color: #FFE0B0;
+    }
+    .explain2 .explain2-special{
+        background-color: #E0E2DF;
+    }
+    .shortcuts .service{
+        width: 45%;
+        margin: 1rem;
+        /* height: 40%; */
+    }
+    .mobile{
+        display: none;
+    }
+    .desktop .service{
+        height: 150px;
+    }
+    .faq-wording .btn{
+        width: 30%;
+        font-size: 2.3rem;
+    }
+    .service-header img{
+        width: 20%;
+    }
+    .info-header img{
+        width: 10%;
+    }
+    .info-header p{
+        font-size: 1.3rem;
+    }
+}
