@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { createClient } from '@supabase/supabase-js';
 import { useState, useEffect } from "react";
+import TallyFormPopup from "./tally";
 import { defaultOrg } from "./Data";
 import Nav from "./Nav";
 import Footer from "./Footer";
@@ -68,6 +69,7 @@ const Result = ({ result }) => {
 
     return (
         <div style={{backgroundColor:"#E1EFFF", height:"100%"}}>
+            <TallyFormPopup />
             <Nav />
                 <section className="w-100 d-flex flex-column align-items-center">
                     <h1 className="mt-5" style={{color:"#C56A4B", textAlign:"center"}}>Congratulations! You have completed the quiz</h1>
