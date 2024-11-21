@@ -6,6 +6,7 @@ import { defaultOrg } from "./Data";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import "./index.css";
+import ConversionTracking from "./conversion";
 const Result = ({ result }) => {
     const supabaseUrl = 'https://jhuoubjorzswmuenkqvc.supabase.co';
     const supabaseKey = import.meta.env.VITE_APIKEY;
@@ -69,6 +70,7 @@ const Result = ({ result }) => {
 
     return (
         <div style={{backgroundColor:"#E1EFFF", height:"100%"}}>
+            <ConversionTracking />
             <TallyFormPopup />
             <Nav />
                 <section className="w-100 d-flex flex-column align-items-center">
