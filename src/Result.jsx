@@ -70,7 +70,6 @@ const Result = ({ result }) => {
 
     return (
         <div style={{backgroundColor:"#E1EFFF", height:"100%"}}>
-            // <ConversionTracking />
             <TallyFormPopup />
             <Nav />
                 <section className="w-100 d-flex flex-column align-items-center">
